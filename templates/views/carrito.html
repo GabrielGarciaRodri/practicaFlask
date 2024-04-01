@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/carrito.css">
+    <link rel="stylesheet" href='{{url_for("static", filename="css/carrito.css")}}'>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>parte_2</title>
 </head>
@@ -16,19 +16,19 @@
                 <ul>
                     <li>
                         <i class='bx bx-closet'></i>
-                        <a href="/index.html">Todos los productos</a>
+                        <a href="/">Todos los productos</a>
                     </li>
                     <li>
                         <i class='bx bx-closet'></i>
-                        <a href="/views/abrigos.html">Abrigos</a>
+                        <a href="{{url_for('abrigos')}}">Abrigos</a>
                     </li>
                     <li>
                         <i class='bx bx-closet'></i>
-                        <a href="/views/camisetas.html">Camisetas</a>
+                        <a href="{{url_for('camisetas')}}">Camisetas</a>
                     </li>
                     <li>
                         <i class='bx bx-closet'></i>
-                        <a href="/views/pantalones.html">Pantalones</a>
+                        <a href="{{url_for('pantalones')}}">Pantalones</a>
                     </li>
                 </ul>
             </div>
@@ -36,7 +36,7 @@
             <div class="carritos_campusShop">
                 <div class="text_carritos">
                     <i class='bx bx-cart'></i>
-                    <a href="/views/carrito.html">Carritos</a>
+                    <a href="{{url_for('carrito')}}">Carritos</a>
                 </div>
                 <button class="btn_carritos">3</button>
             </div>
